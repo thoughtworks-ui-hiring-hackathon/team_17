@@ -9,8 +9,14 @@
     </div>
   </div>      
   <div>
-    <!-- <div class="card-view m-2" *ngFor="let card of similarMovies">
-      <app-card [data]="card"></app-card>
+    <div class="col-lg-12 pb-2 latest-container" *ngIf="similarMovies">
+      <h3 class="heading m-3 pl-5">Similar Movies</h3>
+      <div class="card-container m-3 pl-5">
+        <div class="card-view m-2" *ngFor="let card of similarMovies">
+          <app-card [data]="card">
+          </app-card>
+        </div>
+      </div>
     </div>
-  </div> -->
   </div>
+</div>
