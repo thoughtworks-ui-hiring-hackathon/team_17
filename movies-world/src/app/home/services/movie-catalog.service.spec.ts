@@ -23,11 +23,6 @@ describe('MovieCatalogService', () => {
     httpServiceSpy = null;
   })
 
-  it('should be created', () => {
-    const service: MovieCatalogService = TestBed.get(MovieCatalogService);
-    expect(service).toBeTruthy();
-  });
-
   it('should send latest catalog http request', () => {
     const service = new MovieCatalogService(httpServiceSpy);
     service.getLatestMovies();

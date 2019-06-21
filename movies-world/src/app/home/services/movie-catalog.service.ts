@@ -4,9 +4,7 @@ import { Endpoint } from 'src/app/shared/constants/endpoint.constant';
 import { Movie } from 'src/app/shared/models/movie.model';
 import { HttpwrapperService } from 'src/app/shared/services/httpwrapper.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class MovieCatalogService {
 
   constructor(private httpService: HttpwrapperService) { }
