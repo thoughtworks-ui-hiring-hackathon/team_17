@@ -1,0 +1,17 @@
+.movie-detail{
+    display:flex;
+
+    .overview{
+        display:flex;
+        flex-direction:row;
+        margin-top:20px;
+        .movie-overview{
+            display:flex;
+            width:70%;
+        }
+    
+        .movie-meta-details{
+            display:flex;
+        }
+    }
+}

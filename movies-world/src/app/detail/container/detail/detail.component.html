@@ -1,3 +1,11 @@
-<p>
-  detail works!
-</p>
+<div class="movie-detail" *ngIf="movieDetail">
+  <app-poster [posterImageURL]="movieDetail.poster_path"></app-poster>
+  <div class="overview">
+    <div class="movie-overview">
+      <app-movie-overview [movieOverview]="movieDetail.overview" [title]="movieDetail.title"></app-movie-overview>
+    </div>
+    <div class="movie-meta-details">
+      <app-movie-meta [genre]="genres"></app-movie-meta>
+    </div>
+  </div>
+</div>

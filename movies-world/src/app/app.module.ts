@@ -13,6 +13,10 @@ import { DetailComponent } from './detail/container/detail/detail.component';
 import { ActorDetailComponent } from './actor-detail/container/actor-detail/actor-detail.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ImagesliderComponent } from './imageslider/imageslider.component';
+import { DetailModule } from './detail/detail.module';
+import { MovieOverviewComponent } from './detail/components/movie-overview/movie-overview.component';
+import { PosterComponent } from './detail/components/poster/poster.component';
+import { MovieMetaComponent } from './shared/widgets/movie-meta/movie-meta.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +28,17 @@ import { ImagesliderComponent } from './imageslider/imageslider.component';
     DetailComponent,
     ActorDetailComponent,
     NavigationComponent,
-    ImagesliderComponent
+    ImagesliderComponent,
+    MovieOverviewComponent,
+    PosterComponent,
+    MovieMetaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HomeModule
+    HomeModule,
+    DetailModule
   ],
   providers: [],
   bootstrap: [AppComponent]
