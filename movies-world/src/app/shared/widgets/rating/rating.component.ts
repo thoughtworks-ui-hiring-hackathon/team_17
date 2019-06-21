@@ -14,12 +14,7 @@ export class RatingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    if (this.data <= 10) {
-      this.rating = this.data / 2;
-    } else {
-      this.rating = 5;
-    }
-    console.log(this.rating);
+    this.rating = (this.data <= 10) ? this.data / 2 : 5;
     this.starData = this.starData.map((data, i) => (i + 1 <= this.rating) ? `${data} checked` : data);
   }
 

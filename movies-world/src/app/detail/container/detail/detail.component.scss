@@ -1,6 +1,9 @@
 .movie-detail{
     display:flex;
     flex-direction:column;
+    .card-view{
+        display:inline-block;
+    }
 
     .overview{
         display:flex;

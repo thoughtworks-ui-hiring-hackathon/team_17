@@ -1,6 +1,8 @@
+@import "../../../../variables.scss";
+
 .rating-container{
     display: inline-block;
 .checked {
-    color: orange;
+    color: $orange;
   }
 }
