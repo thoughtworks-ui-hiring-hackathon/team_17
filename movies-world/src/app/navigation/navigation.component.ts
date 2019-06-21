@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
+  //TODO: pass links as input
   constructor() { }
 
   ngOnInit() {
   }
-
 }
