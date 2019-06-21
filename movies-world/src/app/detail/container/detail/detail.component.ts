@@ -16,7 +16,7 @@ export class DetailComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.subscribeMovieDetail('299537');
+    this.subscribeMovieDetail(id);
   }
 
   private subscribeMovieDetail(id: string): void {

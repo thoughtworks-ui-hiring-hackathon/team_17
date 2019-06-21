@@ -4,15 +4,15 @@
         <h3 class="heading m-3 pl-5">Latest</h3>
         <div class="card-container m-3 pl-5">
             <div class="card-view m-2" *ngFor="let card of latestMoviesCardData">
-                <app-card [data]="card" (card-click)="onCardClick($event,'latest')"></app-card>   
+                <app-card [data]="card" (card-click)="onCardClick($event,'latest')" (link-click)="onLinkClick($event)"></app-card>   
             </div>
         </div>
-    </div> 
+    </div>     
     <div class="col-lg-12 pb-2 latest-container" *ngIf="trendingMoviesCardData">
         <h3 class="heading m-3 pl-5">Trending</h3>
         <div class="card-container m-3 pl-5">
             <div class="card-view m-2" *ngFor="let card of trendingMoviesCardData">
-                <app-card [data]="card"  (card-click)="onCardClick($event,'trending')"></app-card>   
+                <app-card [data]="card"  (card-click)="onCardClick($event,'trending')" (link-click)="onLinkClick($event)"></app-card>   
             </div>
         </div>
     </div> 
@@ -21,7 +21,7 @@
         <h3 class="heading m-3 pl-5">Most Watched</h3>
         <div class="card-container m-3 pl-5">
             <div class="card-view m-2" *ngFor="let card of popularMoviesCardData">
-                <app-card [data]="card"  (card-click)="onCardClick($event,'popular')"></app-card>   
+                <app-card [data]="card"  (card-click)="onCardClick($event,'popular')" (link-click)="onLinkClick($event)"></app-card>   
             </div>
         </div>
     </div> 

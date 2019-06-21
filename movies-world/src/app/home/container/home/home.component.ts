@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { MovieCatalogService } from '../../services/movie-catalog.service';
 import { CardData } from 'src/app/shared/models/card.model';
 import { Movie } from 'src/app/shared/models/movie.model';
+import { Router } from '@angular/router';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +22,7 @@ export class HomeComponent implements OnInit {
 
   public selectedCard?: Movie;
 
-  constructor(private movieCatalogService: MovieCatalogService) { }
+  constructor(private movieCatalogService: MovieCatalogService,private router : Router) { }
 
   ngOnInit(): void {
     this.subscribeLatestMovies();
@@ -43,7 +45,11 @@ export class HomeComponent implements OnInit {
         this.selectedCard = undefined;
         break;
     }
-    //$(`#${this.selectedCard.id}`).modal('toggle');   
+    // $(`#${this.selectedCard.id}`).modal('toggle');   
+  }
+  public onLinkClick(cardId: string){
+    const url = `/movie-detail/${cardId}`;
+    this.router.navigateByUrl(url);
   }
   private subscribeLatestMovies(): void {
     this.movieCatalogService.getLatestMovies().subscribe(movies => {
