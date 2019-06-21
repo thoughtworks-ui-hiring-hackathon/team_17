@@ -10,8 +10,8 @@ export class MovieMetaComponent implements OnInit {
   @Input() genre: string;
   @Input() cast: string;
   @Input() director: string;
-
-  constructor() { }
+  @Input() rating : number;
+   constructor() { }
 
   ngOnInit() {
   }

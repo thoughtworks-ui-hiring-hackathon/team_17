@@ -2,12 +2,12 @@
   <app-poster [posterImageURL]="movieDetail.poster_path"></app-poster>
   <div class="overview">
     <div class="movie-overview">
-      <app-movie-overview [movieOverview]="movieDetail.overview" [title]="movieDetail.title"></app-movie-overview>
+      <app-movie-overview [movieOverview]="movieDetail.overview" [title]="movieDetail.title" ></app-movie-overview>
     </div>
     <div class="movie-meta-details">
-      <app-movie-meta [genre]="genres"></app-movie-meta>
+      <app-movie-meta [genre]="genres" [rating]="movieDetail.vote_average"></app-movie-meta>
     </div>
-  </div>
+  </div>   
   <div>
     <!-- <div class="card-view m-2" *ngFor="let card of similarMovies">
       <app-card [data]="card"></app-card>
