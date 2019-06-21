@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'movies-world';
+  public cardData ={
+    title :"Title",
+    description:"lorem lupsumhgjsdsdjkk"
+  };ss
 }

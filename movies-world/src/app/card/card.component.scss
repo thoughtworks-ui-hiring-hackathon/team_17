@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+.card{
+    width:15em;
+    .image-container{
+        height:12em;
+        background-color:$light-grey;
+    }
+}
