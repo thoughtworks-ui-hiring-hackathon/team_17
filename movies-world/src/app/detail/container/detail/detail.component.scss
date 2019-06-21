@@ -1,0 +1,19 @@
+.movie-detail{
+    display:flex;
+    flex-direction:column;
+
+    .overview{
+        display:flex;
+        flex-direction:row;
+        margin-top:20px;
+        padding:10px;
+        .movie-overview{
+            display:flex;
+            width:70%;
+        }
+    
+        .movie-meta-details{
+            display:flex;
+        }
+    }
+}

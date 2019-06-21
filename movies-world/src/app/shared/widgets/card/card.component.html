@@ -1,0 +1,12 @@
+<div class="card" *ngIf="dataVal" (click)="onClick('card')">
+  <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+  <div class="image-container"></div>
+  <div class="card-body p-3">
+    <h5 class="card-title">{{dataVal.title}}<span class="fa fa-heart-o"></span></h5>
+    <p class="card-text">{{dataVal.description}}</p>
+  </div> 
+  <div class="card-footer p-3">
+    <app-rating [data]="dataVal.rating"></app-rating> 
+    <a class="pl-4" href="javascript:void(0)" (click)="onClick('link')">show more</a>
+  </div>
+</div>

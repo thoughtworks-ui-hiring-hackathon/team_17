@@ -1,0 +1,18 @@
+.navigation-panel{
+    background-color:black;
+    height: 40px;
+    width: 100%;
+    padding-top:5px;
+
+    .brand-label{
+        margin:0 50px 0 20px;
+        color:white;
+        text-decoration:none;
+    }
+
+    .each-link{
+        padding:15px;   
+        color:white;
+        text-decoration:none;
+    }
+}
