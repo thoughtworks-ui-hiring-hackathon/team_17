@@ -11,6 +11,8 @@ import { HomeComponent } from './home/container/home/home.component';
 import { DiscoverComponent } from './discover/container/discover/discover.component';
 import { DetailComponent } from './detail/container/detail/detail.component';
 import { ActorDetailComponent } from './actor-detail/container/actor-detail/actor-detail.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ImagesliderComponent } from './imageslider/imageslider.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ActorDetailComponent } from './actor-detail/container/actor-detail/acto
     HomeComponent,
     DiscoverComponent,
     DetailComponent,
-    ActorDetailComponent
+    ActorDetailComponent,
+    NavigationComponent,
+    ImagesliderComponent
   ],
   imports: [
     BrowserModule,
