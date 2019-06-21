@@ -17,6 +17,8 @@ import { DetailModule } from './detail/detail.module';
 import { MovieOverviewComponent } from './detail/components/movie-overview/movie-overview.component';
 import { PosterComponent } from './detail/components/poster/poster.component';
 import { MovieMetaComponent } from './shared/widgets/movie-meta/movie-meta.component';
+// import '../../node_modules/bootstrap-material-design/js/bootstrapMaterialDesign.js';
+// import '../../node_modules/jquery/dist/jquery';
 
 @NgModule({
   declarations: [
